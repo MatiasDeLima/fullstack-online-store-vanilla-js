@@ -1,0 +1,47 @@
+/*############### COLLECTION SECTION ###############*/
+.collection__container {
+    padding-top: 2rem;
+}
+
+.collection__container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.collection__card {
+    position: relative;
+}
+
+.collection__card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.collection__card-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, 
+                 hsla(0, 0%, 0%, 0.329) 58%,
+                 rgba(0, 0, 0, 0.466) 78%);
+}
+
+.collection__card:nth-child(3) {
+    grid-column: span 2;
+}
+
+.collection__card-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white-color);
+    text-align: center;
+    z-index: 1;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}

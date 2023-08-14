@@ -1,0 +1,43 @@
+/*########## HERO SECTION ##########*/
+.hero {
+    height: 812px;
+}
+
+.hero__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 812px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero__shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 812px;
+    width: 100%;
+    background: linear-gradient(180deg, 
+                 hsla(0, 0%, 0%, 0.438) 58%,
+                 rgba(0, 0, 0, 0.466) 78%);
+}
+
+.hero__container {
+    position: relative;
+    padding-top: 7rem;
+}
+
+.hero__title {
+    font-size: var(--biggest-font-size);
+    line-height: 46px;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+.hero__description {
+    line-height: 21px;
+    color: rgb(235, 235, 235);
+    margin-bottom: 2.5rem;
+}
